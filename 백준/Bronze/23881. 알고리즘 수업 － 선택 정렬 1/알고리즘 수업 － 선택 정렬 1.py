@@ -23,3 +23,6 @@ def selection(arr):
     return 0
 
 selection(arr)
+
+## 함수 내에서 for 를 실행하면 제어변수가 local로 지정돼서 더 빠르다
+## 그냥 for 를 실행하면 제어변수가 global 이 돼서 느림. 그래서 계속 시간초과가 떴음.
