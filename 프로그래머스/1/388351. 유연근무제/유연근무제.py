@@ -16,7 +16,7 @@ def solution(schedules, timelogs, startday):
             if (timelogs[i][j] <= allowed[i]) and (t!=6 and t!=7) :
                 cnt[i] += 1
                 print(t)
-            if t >7 :
+            if t >7 :    # 8 -> 1 로 초기화 해주지 않으면 startday 가 7일 때 문제 생김 
                 t = 1 
             t += 1
             
