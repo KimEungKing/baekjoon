@@ -29,8 +29,7 @@ def solution(bandage, health, attacks):
                 
         #죽는경우
         if health <= 0:
-            answer=-1
-            break
+            return -1
 
         answer = health
         
