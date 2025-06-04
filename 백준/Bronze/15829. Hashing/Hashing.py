@@ -7,4 +7,6 @@ result = 0
 # a의 ascii 97
 for i in range(len(s)):
     result += (ord(s[i])-96)*(31 ** i)
+    result %= 1234567891
+    
 print(result)
