@@ -6,9 +6,8 @@ input = sys.stdin.readline
 # 브루트포스
 
 n = int(input())
-people = [tuple(map(int, input().split())) for _ in range(n)]
+people = [list(map(int, input().split())) for _ in range(n)]
 ranks = []
-
 for i in range(n):
     rank = 1  # 처음엔 1등으로 시작
     for j in range(n):
