@@ -13,7 +13,7 @@ arr.reverse()
 answer = 1
 current = a % c
 
-for i, n in enumerate(arr,start=1):
+for n in arr:
     if n == '1':
         answer = answer * current % c
     current = current * current % c
