@@ -18,9 +18,9 @@ for i in s:
     elif i == '>':
         judge = False
         stk.append(i)
-        for _ in range(len(stk)):
-            answer += ''.join(stk)
-            stk.clear()
+        # pop(0) --> O(N)
+        answer += ''.join(stk)
+        stk.clear()
 
     elif i == ' ' and not judge:
         for _ in range(len(stk)):
