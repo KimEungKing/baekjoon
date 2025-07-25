@@ -19,7 +19,8 @@ for i in s:
         judge = False
         stk.append(i)
         for _ in range(len(stk)):
-            answer += stk.pop(0)\
+            answer += ''.join(stk)
+            stk.clear()
 
     elif i == ' ' and not judge:
         for _ in range(len(stk)):
