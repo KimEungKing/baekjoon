@@ -4,6 +4,5 @@ SELECT a.rest_id, a.rest_name, a.food_type,
 FROM rest_info as a 
 join rest_review as b on a.rest_id = b.rest_id
 where a.address like '서울%'
-group by a.rest_id, a.rest_name, a.food_type, 
-    a.favorites, a.address
+group by a.rest_id
 order by r DESC, a.favorites desc
